@@ -16,9 +16,9 @@ def seguimiento():
         opcion = input("Ingrese la opcion que desee: ")
         match opcion:
             case '1':
-                registrarIngredientesUtilizados()
+                pass
             case '2':
-                verIngredientesUtilizados()
+                pass
             case '3':
                 limpiarPantalla()
                 return 
@@ -30,13 +30,6 @@ def seguimiento():
                 pausarPantalla()
                 limpiarPantalla()
 
-def registrarIngredientesUtilizados():
-    limpiarPantalla()
-    pausarPantalla()
-
-def verIngredientesUtilizados():
-    limpiarPantalla()
-    pausarPantalla()
 
 def registroYGestionDeCategorias():
     menuRegistroCategoria()
