@@ -1,8 +1,8 @@
 import os
 RUTA_CHEF = 'data/chefs.json'
-RUTA_INGREDIEMTES = 'data/ingredientes.json'
+RUTA_INGREDIENTES = 'data/ingredientes.json'
 RUTA_CATEGORIA = 'data/categorias.json'
-RUTA_HAMBUGUESAS = 'data/hamburguesas.json'
+RUTA_HAMBURGUESAS = 'data/hamburguesas.json'
 
 TIPO_DE_ELEMENTOS = {
     'chef':{
@@ -14,7 +14,7 @@ TIPO_DE_ELEMENTOS = {
     'ingrediente':{
         "nombre": "ingrediente",
         'plural': 'ingredientes',
-        'ruta': RUTA_INGREDIEMTES,
+        'ruta': RUTA_INGREDIENTES,
         "descripcion": "Pan de hamburguesa clásico",
         "precio": 2.5,
         "stock": 500
@@ -28,7 +28,7 @@ TIPO_DE_ELEMENTOS = {
     'hamburguesa':{
         "nombre": "hamburguesa",
         'plural': 'hamburguesas',
-        'ruta': RUTA_HAMBUGUESAS,
+        'ruta': RUTA_HAMBURGUESAS,
         "categoria": "categoria",
         "ingredientes": [],
         "precio": 10,

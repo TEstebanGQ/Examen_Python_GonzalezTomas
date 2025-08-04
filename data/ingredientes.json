@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "aaa",
+        "descripcion": "aaa",
+        "precio": "aa",
+        "stock": "aa"
+    },
+    {
+        "nombre": "bbnbb",
+        "descripcion": "bbbb",
+        "precio": "bbb",
+        "stock": "bbb"
+    },
+    {
+        "nombre": "ccccc",
+        "descripcion": "ccccc",
+        "precio": "ccc",
+        "stock": "ccc"
+    },
+    {
+        "nombre": "aaa",
+        "descripcion": "aaa",
+        "precio": "aa",
+        "stock": "aa"
+    },
+    {
+        "nombre": "aaaa",
+        "descripcion": "aaa",
+        "precio": 22.0,
+        "stock": 30
+    }
+]

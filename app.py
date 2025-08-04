@@ -22,7 +22,7 @@ def menuPrincipal():
             case '1':
                 menuIngredientes()
             case '2':
-                submenus.segimiento()
+                submenus.seguimiento()
             case '3':
                 submenus.registroYGestionDeCategorias()
             case '4':
@@ -47,6 +47,5 @@ def menuPrincipal():
                 continue
 
 
-if __name__ or '__main__': 
+if __name__ == '__main__': 
     menuPrincipal()
-    
