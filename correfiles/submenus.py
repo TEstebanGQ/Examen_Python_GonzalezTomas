@@ -1,7 +1,6 @@
 
 from utils.screenControllers import limpiarPantalla, pausarPantalla
 
-
 def segimiento():
     limpiarPantalla()
     while True:

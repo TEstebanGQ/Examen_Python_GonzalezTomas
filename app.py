@@ -1,6 +1,6 @@
 from utils.screenControllers import limpiarPantalla, pausarPantalla
 import correfiles.submenus as submenus
-import correfiles.administar as administar
+from correfiles.ingredientes import menuRegistroIngredientes as menuIngredientes
 def menuPrincipal():
     limpiarPantalla()
     while True:
@@ -20,7 +20,7 @@ def menuPrincipal():
         opcion = input("Ingrese la opcion que desee: ")
         match opcion:
             case '1':
-                administar()
+                menuIngredientes()
             case '2':
                 submenus.segimiento()
             case '3':

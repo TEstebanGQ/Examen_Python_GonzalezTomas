@@ -1,4 +1,4 @@
-from utils.coreFiles import cf 
+import utils.coreFiles as cf
 from utils.screenControllers import pausarPantalla, limpiarPantalla
 from config import TIPO_DE_ELEMENTOS, ETIQUETA_CAMPOS
 def menuRegistroIngredientes():
@@ -22,7 +22,7 @@ def menuRegistroIngredientes():
             case '3':
                 editarIngrediente()
             case '4':
-                pass
+                eliminarIngrediente()
             case '5':
                 limpiarPantalla()
                 return 
@@ -39,15 +39,11 @@ def registroIngredientes():
     limpiarPantalla()
     print('-----Registro nde ingredientes-----')
     ingredientes = cf.obtenerIngredientes()
-    if not ingredientes:
-        print('No hay ingredientes registrados')
-        pausarPantalla()
-        return
     nuevoIngrediente = {
         'nombre': input('Ingrese el nombre del ingrediente: '),
         'descripcion' : input('Ingrese la descripcion: '),
-        'precio' : input(float('Ingrese el precio: ')),
-        'stock' : input(float('Ingrese el stock: '))
+        'precio' : input('Ingrese el precio: '),
+        'stock' : input('Ingrese el stock: ')
     }
     ingredientes.append(nuevoIngrediente)
     cf.guardarIngredientes(ingredientes)
@@ -117,6 +113,28 @@ def listarIngredientes():
         print('---------------------------')
         pausarPantalla()
         return
+    
+def eliminarIngrediente():
+    limpiarPantalla()
+    while True:
+        try:
+            opcion = int(input('Ingrese el numero del ingrediente a eliminar: '))
+            if opcion < 1:
+                print('Opcion invalida')
+                continue
+            break
+        except ValueError:
+            print('Opcion invalida')
+            ingredientes = cf.obtenerIngredientes()
+            for i, ingrediente in enumerate(ingredientes, 1):
+                print(f'{i}. {ingrediente["nombre"]}')
+                pausarPantalla()
+                continue
+            cf.eliminarIngrediente(opcion - 1)
+            print('Ingrediente eliminado correctamente')
+            pausarPantalla()
+            return
+
 
 
 

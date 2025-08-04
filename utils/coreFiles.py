@@ -23,7 +23,7 @@ def guardarJson(ruta, datos):
 def obtenerChef() -> Dict:
     return cargarJson(RUTA_CHEF)
 
-def obtenerIngrediente() -> Dict:
+def obtenerIngredientes() -> Dict:
     return cargarJson(RUTA_INGREDIEMTES)
 
 def obtenerCategoria() -> Dict:
@@ -36,7 +36,7 @@ def obtenerHamburguesa() -> Dict:
 def guardarChef(chef: Dict) -> None:
     guardarJson(chef, RUTA_CHEF)
 
-def guardarIngrediente(ingrediente: Dict) -> None:
+def guardarIngredientes(ingrediente: Dict) -> None:
     guardarJson(ingrediente, RUTA_INGREDIEMTES)
 
 def guardarCategoria(categoria: Dict) -> None:
